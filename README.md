@@ -38,9 +38,9 @@ When running it will check the last received time for data and then if it is mor
 
 ![alert image](images/alert.png)
 
-### On-Demand Status (`!status`)
+### On-Demand Status (`/status`)
 
-If you enter `/status` or `satatus_all` in the chat with the bot from the account you specified in `telegram_channel_id`. You get an on-demand update across all servers (set in servers.json) and posted into Telegram rather than opening up multiple browsers to see the data.
+If you enter `/status` or `/satatus_all` in the chat with the bot from the account you specified in `telegram_channel_id`. You get an on-demand update across all servers (set in servers.json) and posted into Telegram rather than opening up multiple browsers to see the data.
 
 ![status image](images/status.png)
 
