@@ -54,7 +54,7 @@ def run():
             }
             log.info("Starting Device Checker Script")
             while True:
-                await asyncio.sleep(30)
+                
                 with open('servers.json') as servers_json:
                     servers_config_json = json.load(servers_json)
                     for server in servers_config_json:
@@ -133,6 +133,7 @@ def run():
 
                 log.info("All device checks completed, going to sleep")
                 # time.sleep(60 * delay_between_checks)
+                await asyncio.sleep(60*delay_between_checks)
                 
         except Exception as ex:
             traceback.print_exc()
