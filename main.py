@@ -1,10 +1,10 @@
 import logging
 import sys
-from threading import Thread
+# from threading import Thread
 
 from colorlog import ColoredFormatter
 
-from alert import alert_thread
+# from alert import alert_thread
 from bot import run
 from run_args import get_args
 
@@ -55,8 +55,8 @@ log.addHandler(stdout_hdlr)
 log.addHandler(stderr_hdlr)
 
 # Start ScanChecker
-alert_thread = Thread(target=alert_thread, name='ScanChecker')
-alert_thread.start()
+# alert_thread = Thread(target=alert_thread, name='ScanChecker')
+# alert_thread.start()
 
-# Start Discord Bot
+# Start Telegram Bot
 run()

@@ -4,8 +4,8 @@ import configargparse
 def get_args():
     parser = configargparse.ArgParser(default_config_files=["config.ini"])
 
-    parser.add_argument('-dt', '--discord_token', required=True, type=str,
-                        help='Enter token for discord')
+    parser.add_argument('-tt', '--telegram_token', required=True, type=str,
+                        help='Enter token for telegram')
 
     parser.add_argument('-dba', '--duration_before_alert', required=False, default=20, type=int,
                         help='Enter the number of minutes a device can go before an alert is triggered  (Default: 20)')
